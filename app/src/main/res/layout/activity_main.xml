@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="webpage.ranjit.myapplication.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:hint="Enter Url"
+            android:text="http://www."
+            android:layout_weight="4"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:onClick="open"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" android:text="Open"/>
+
+    </LinearLayout>
+    <WebView
+        android:id="@+id/webView"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+   ></WebView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:onClick="SavePage"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content" android:text="Open Saved Pages"/>
+
+</RelativeLayout>
